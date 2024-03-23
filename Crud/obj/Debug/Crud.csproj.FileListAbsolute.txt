@@ -1,0 +1,2 @@
+C:\Users\PC\source\repos\Crud\Crud\obj\Debug\Crud.csprojAssemblyReference.cache
+C:\Users\PC\source\repos\Crud\Crud\obj\Debug\Crud.csproj.CoreCompileInputs.cache
