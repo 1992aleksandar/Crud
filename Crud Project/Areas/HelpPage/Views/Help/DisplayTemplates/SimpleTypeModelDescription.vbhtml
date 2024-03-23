@@ -1,3 +1,0 @@
-@Imports Crud_Project.Areas.HelpPage.ModelDescriptions
-@ModelType SimpleTypeModelDescription
-@Model.Documentation
