@@ -1,16 +1,20 @@
 ﻿// WebApiConfig.cs
 using System.Web.Http;
 
-public static class WebApiConfig
+namespace Crud
 {
-    public static void Register(HttpConfiguration config)
+    public static class RouteConfig
     {
-        config.MapHttpAttributeRoutes();
+        public static void Register(HttpConfiguration config)
+        {
+            config.MapHttpAttributeRoutes();
 
-        config.Routes.MapHttpRoute(
-            name: "DefaultApi",
-            routeTemplate: "api/{controller}/{id}",
-            defaults: new { id = RouteParameter.Optional }
-        );
+            config.Routes.MapHttpRoute(
+                name: "DefaultApi",
+                routeTemplate: "api/{controller}/{id}",
+                defaults: new { id = RouteParameter.Optional }
+            );
+        }
     }
+
 }

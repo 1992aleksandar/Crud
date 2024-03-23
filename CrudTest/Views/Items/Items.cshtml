@@ -1,0 +1,26 @@
+﻿@using CrudTest.Models
+@model Item
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frontend Page</title>
+</head>
+<body>
+    <h1>Values from API:</h1>
+    <ul>
+
+        <li>@Model.Id</li>
+        <li>@Model.Name</li>
+        <li>@Model.Description</li>
+    </ul>
+
+    <button onclick="sendCookie()">Send Cookie</button>
+
+    <script>
+        function sendCookie() {
+            document.cookie = "cookie_name=cookie_value; expires=Thu, 18 Dec 2025 12:00:00 UTC; path=/";
+            alert("Cookie sent!");
+        }
+    </script>
+</body>
+</html>
