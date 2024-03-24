@@ -12,6 +12,7 @@
     <button onclick="sendCookieTolocalhost44393()">Send GET Request to mywebsite1</button>
     <button onclick="sendCookieTolocalhost44394()">Send GET Request to mywebsite2</button>
  <button onclick="sendCookieTolocalhost44393subdomain()">Send GET Request to mywebsite1</button>
+		<button onclick="redirectTomywebsite1()">Go to Site B</button>
     <script>
               function sendCookie() {
 			var currentDate = new Date();
@@ -67,6 +68,10 @@
                 }
             };
             xhr.send();
+        }
+
+ 	function redirectTomywebsite1() {
+		 window.location.href = "https://mywebsite1:44393/siteA.html"; 
         }
     </script>
 </body>
