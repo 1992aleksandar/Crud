@@ -1,0 +1,18 @@
+<!-- SiteA.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiteA</title>
+</head>
+<body>
+    
+    <button onclick="sendCookie()">Send Cookie from site B</button>
+    <script>
+        function sendCookie() {
+            document.cookie = "CookieFromSiteB=cookie_value; expires=Thu, 18 Dec 2025 12:00:00 UTC; path=/";
+        }
+    </script>
+</body>
+</html>

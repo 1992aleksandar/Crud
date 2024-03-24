@@ -14,12 +14,19 @@
         <li>@Model.Description</li>
     </ul>
 
-    <button onclick="sendCookie()">Send Cookie</button>
-
+    <button onclick="sendCookieFromFront()">Send Cookie from front</button>
+    <button onclick="removeCookieFromFront('CookieFromFront')">Remove Cookie from fronts</button>
+    <button onclick="removeBackendCookieFromFront()">Remove backend Cookie from fronts</button>
     <script>
-        function sendCookie() {
-            document.cookie = "cookie_name=cookie_value; expires=Thu, 18 Dec 2025 12:00:00 UTC; path=/";
-            alert("Cookie sent!");
+        function sendCookieFromFront() {
+            document.cookie = "CookieFromFront=cookie_value; expires=Thu, 18 Dec 2025 12:00:00 UTC; path=/";
+        }
+        function removeCookieFromFront(name) {
+            document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        }
+
+        function removeBackendCookieFromFront() {
+            document.cookie = "CookieFromBackend=cookie_value; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
         }
     </script>
 </body>

@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    Hi
+    <!--<meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0; URL=/Views/Items\Items">-->
+    <title>Redirecting...</title>
+</head>
+<body>
+    
+    <script>
+        // Define a function to redirect to the desired URL
+        function redirectToControllerView() {
+            // Replace '/ControllerName/ActionName' with the actual URL returned by your ASP.NET controller
+            var controllerUrl = '/Items/Index';
+            // Redirect to the controller's view
+            window.location.href = controllerUrl;
+        }
+        // Call the function when the page loads
+        window.onload = redirectToControllerView;
+    </script>
+</body>
+</html>
