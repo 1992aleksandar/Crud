@@ -12,12 +12,8 @@
     <button onclick="sendCookieTolocalhost44393()">Send GET Request to mywebsite1</button>
     <button onclick="sendCookieTolocalhost44394()">Send GET Request to mywebsite2</button>
     <script>
-              function sendCookie() {
-			var currentDate = new Date();
-
-		// Convert the date object to a string
-		var cookieValue = currentDate.toLocaleString();
-            document.cookie = "mywebsite1cookie="+cookieValue +"; expires=Thu, 18 Dec 2025 12:00:00 UTC;path=/;Secure;SameSite=None";
+        function sendCookie() {
+            document.cookie = "mywebsite1cookie=cookie_value; expires=Thu, 18 Dec 2025 12:00:00 UTC;domain=mywebsite1; path=/;Secure;SameSite=Strict";
         }
 
         function sendCookieTolocalhost44393() {

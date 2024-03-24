@@ -21,7 +21,7 @@ namespace CrudTest.Controllers
             Response.Cookies["CookieFromBackend"].Value = "cookie_value";
             Response.Cookies["CookieFromBackend"].Expires = DateTime.Now.AddDays(1); // Set expiration
             Response.Cookies["CookieFromBackend"].Secure = true;
-            Response.Cookies["CookieFromBackend"].HttpOnly = false;
+            Response.Cookies["CookieFromBackend"].HttpOnly = true;
             Item item = new Item { Description = "description", Id = 1, Name = "name" };
             return View("Items", item);
         }
