@@ -1,6 +1,3 @@
-C:\Users\PC\source\repos\Crud\CrudTest2\bin\CrudTest.dll.config
-C:\Users\PC\source\repos\Crud\CrudTest2\bin\CrudTest.dll
-C:\Users\PC\source\repos\Crud\CrudTest2\bin\CrudTest.pdb
 C:\Users\PC\source\repos\Crud\CrudTest2\bin\roslyn\csc.exe
 C:\Users\PC\source\repos\Crud\CrudTest2\bin\roslyn\csc.exe.config
 C:\Users\PC\source\repos\Crud\CrudTest2\bin\roslyn\csc.rsp
@@ -81,5 +78,8 @@ C:\Users\PC\source\repos\Crud\CrudTest2\bin\Microsoft.CodeDom.Providers.DotNetCo
 C:\Users\PC\source\repos\Crud\CrudTest2\obj\Debug\CrudTest2.csprojAssemblyReference.cache
 C:\Users\PC\source\repos\Crud\CrudTest2\obj\Debug\CrudTest2.csproj.CoreCompileInputs.cache
 C:\Users\PC\source\repos\Crud\CrudTest2\obj\Debug\CrudTest2.csproj.CopyComplete
-C:\Users\PC\source\repos\Crud\CrudTest2\obj\Debug\CrudTest.dll
-C:\Users\PC\source\repos\Crud\CrudTest2\obj\Debug\CrudTest.pdb
+C:\Users\PC\source\repos\Crud\CrudTest2\bin\CrudTest2.dll.config
+C:\Users\PC\source\repos\Crud\CrudTest2\bin\CrudTest2.dll
+C:\Users\PC\source\repos\Crud\CrudTest2\bin\CrudTest2.pdb
+C:\Users\PC\source\repos\Crud\CrudTest2\obj\Debug\CrudTest2.dll
+C:\Users\PC\source\repos\Crud\CrudTest2\obj\Debug\CrudTest2.pdb
