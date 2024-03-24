@@ -11,13 +11,20 @@
     <button onclick="sendCookie()">Inject cookie on this site with JavaScript</button>
     <button onclick="sendCookieTolocalhost44393()">Send GET Request to mywebsite1</button>
     <button onclick="sendCookieTolocalhost44394()">Send GET Request to mywebsite2</button>
+
+	<div>
+
+	iframe:
+	<!-- This iframe will display the content of mywebsite2 -->
+    <iframe src="https://mywebsite2:44394/siteA.html" style="width: 100%; height: 500px;"></iframe>
+</div>
     <script>
               function sendCookie() {
 			var currentDate = new Date();
 
 		// Convert the date object to a string
 		var cookieValue = currentDate.toLocaleString();
-            document.cookie = "mywebsite1cookie="+cookieValue +"; expires=Thu, 18 Dec 2025 12:00:00 UTC;path=/;Secure;SameSite=None";
+            document.cookie = "mywebsite1cookie="+cookieValue +"; expires=Thu, 18 Dec 2025 12:00:00 UTC;path=/;Secure;SameSite=Lax";
         }
 
         function sendCookieTolocalhost44393() {
