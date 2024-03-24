@@ -8,17 +8,18 @@
 </head>
 <body>
     
-    <button onclick="sendCookie()">Inject cookie on this with JavaScript</button>
-    <button onclick="sendCookieTolocalhost44393()">Send GET Request to https://localhost:44393/siteA.html</button>
-    <button onclick="sendCookieTolocalhost44394()">Send GET Request to https://localhost:44394/siteA.html</button>
+    <button onclick="sendCookie()">Inject cookie on this site with JavaScript</button>
+    <button onclick="sendCookieTolocalhost44393()">Send GET Request to mywebsite1</button>
+    <button onclick="sendCookieTolocalhost44394()">Send GET Request to mywebsite2</button>
     <script>
         function sendCookie() {
-            document.cookie = "CookieFromSiteA=cookie_value; expires=Thu, 18 Dec 2025 12:00:00 UTC;domain=localhost; path=/;Secure;SameSite=Strict";
+            document.cookie = "CookieFromSiteA=cookie_value; expires=Thu, 18 Dec 2025 12:00:00 UTC;domain=mywebsite1; path=/;Secure;SameSite=None";
         }
 
         function sendCookieTolocalhost44393() {
             var xhr = new XMLHttpRequest();
-            xhr.open("GET", "https://localhost:44393/siteA.html", true);
+ 	xhr.withCredentials = true; // Set withCredentials to true
+            xhr.open("GET", "https://mywebsite1:44393/siteA.html", true);
             xhr.onreadystatechange = function() {
                 if (xhr.readyState === XMLHttpRequest.DONE) {
                     if (xhr.status === 200) {
@@ -33,7 +34,8 @@
 
         function sendCookieTolocalhost44394() {
             var xhr = new XMLHttpRequest();
-            xhr.open("GET", "https://localhost:44394/siteA.html", true);
+		 xhr.withCredentials = true; // Set withCredentials to true
+            xhr.open("GET", "https://mywebsite2:44394/siteA.html", true);
             xhr.onreadystatechange = function() {
                 if (xhr.readyState === XMLHttpRequest.DONE) {
                     if (xhr.status === 200) {
