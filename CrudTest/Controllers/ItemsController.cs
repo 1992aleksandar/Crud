@@ -26,6 +26,11 @@ namespace CrudTest.Controllers
             return View("Items", item);
         }
 
+        public string Get()
+        {
+            return "ok";
+        }
+
     }
 
 }
